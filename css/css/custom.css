@@ -10,6 +10,7 @@
 .site-section-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .info-1__col {
