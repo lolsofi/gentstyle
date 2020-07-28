@@ -27,7 +27,7 @@ span {
 
 table {
   // border-collapse: collapse;
-  width: auto;
+  // width: auto;
   font-size: 14px;
 }
 
@@ -35,20 +35,32 @@ td {
   text-align: left;
   background-color: #F9F9F9;
   color: #163154;
+  padding-right: 4px;
 }
 
 
+.button {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  // transition: .2s;
+  text-align: center;
+  font-size: 14px;
+}
 
-.btn-1 {
+
+.btn-1 a {
+  background-color: #EDF1F5;
+  color: #163154 !important;
+  border-radius: 3px;
+}
+
+.btn-2 a {
   background-color: #45A65A;
   border-radius: 3px;
-}
-
-.btn-2 {
-  background-color: #EDF1F5;
-  border-radius: 3px;
-  color: #163154;
-  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 
