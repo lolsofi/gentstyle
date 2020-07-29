@@ -169,7 +169,7 @@ h2 {
 .btn-info-3--rews {
   border: 1px solid #EDF1F5;
   background-color: #EDF1F5;
-  color: #163154;
+  color: #163154 !important;
   font-family: "OpenSans-Light", sans-serif;
 }
 .btn-info-3--rews:hover {
@@ -272,4 +272,8 @@ h2 {
   .entry-content p {
     font-size: 15px;
   }
+}
+
+.btn-wrap a {
+  text-decoration: none;
 }
