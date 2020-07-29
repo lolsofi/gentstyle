@@ -124,6 +124,11 @@ h2 {
   width: 100%;
   font-size: 14px;
 }
+@media (max-width: 991.98px) {
+  .info-2__right-top {
+    margin-bottom: 1px;
+  }
+}
 .info-2 tr {
   border-bottom: 3px solid #fff;
 }
