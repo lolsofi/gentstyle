@@ -1,16 +1,82 @@
-.site-breadcrumbs-p {
-  color: #163154;
-  font-size: 10px;
-  line-height: 1.4;
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.site-breadcrumbs-p a {
-  text-decoration: none;
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../../fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../../fonts/OpenSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Extrabold";
+  src: url("../../fonts/OpenSans-Extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
 .site-section-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.site-breadcrumbs {
+  display: flex;
+}
+
+.site-breadcrumbs-p a {
+  text-decoration: none;
+  color: #163154;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.site-breadcrumbs-p__icon {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.d-lg-block {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+.h1 {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "OpenSans-Semibold", sans-serif;
+}
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+
+.artical-img-wrap img {
+  margin-top: 26px;
 }
 
 .info-1__col {
@@ -36,7 +102,7 @@
   min-width: 33px;
 }
 .info-1-item__title {
-  font-weight: 300;
+  font-family: "OpenSans-Light", sans-serif;
   font-size: 10px;
   line-height: 1.2727272727;
   text-transform: capitalize;
@@ -44,7 +110,7 @@
 }
 .info-1-item__text {
   font-style: normal;
-  font-weight: 600;
+  font-family: "OpenSans-Semibold", sans-serif;
   font-size: 12px;
   line-height: 1.3333333333;
   color: #163154;
@@ -59,7 +125,7 @@
   font-size: 14px;
 }
 .info-2 tr {
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 .info-2 td {
   text-align: left;
@@ -68,8 +134,13 @@
   padding: 4px 10px;
   font-size: 13px;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .info-2 td {
+    font-size: 10px;
+  }
+}
 .info-2 td:nth-child(1) {
-  font-weight: 300;
+  font-family: "OpenSans-Light", sans-serif;
   padding-left: 18px;
 }
 
@@ -92,13 +163,14 @@
   width: 100%;
 }
 .btn-info-3__counter {
-  font-weight: 400;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-left: 6px;
 }
 .btn-info-3--rews {
   border: 1px solid #EDF1F5;
   background-color: #EDF1F5;
   color: #163154;
-  font-weight: 300;
+  font-family: "OpenSans-Light", sans-serif;
 }
 .btn-info-3--rews:hover {
   border: 1px solid #163154;
@@ -111,6 +183,11 @@
   color: #FFFFFF !important;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media (min-width: 992px) and (max-width: 1068px) {
+  .btn-info-3--success {
+    font-size: 12px;
+  }
 }
 .btn-info-3--success:hover {
   border: 1px solid #0c992b;
@@ -135,7 +212,7 @@
 }
 .info-3-item__counter {
   padding-right: 20px;
-  font-weight: bold;
+  font-family: "OpenSans-Bold", sans-serif;
   font-size: 24px;
   line-height: 1.375;
   color: #163154;
@@ -149,7 +226,7 @@
 }
 .info-3-item__text {
   padding: 0;
-  font-weight: 300;
+  font-family: "OpenSans-Light", sans-serif;
   font-size: 10px;
   line-height: 1.4;
   color: #AEACAC;
@@ -177,4 +254,22 @@
   height: 1px;
   background: #EDF1F5;
   margin-bottom: -8px;
+}
+@media (max-width: 991.98px) {
+  .artical-head::after {
+    width: 100%;
+    left: auto;
+    margin-left: auto;
+  }
+}
+
+.entry-content p {
+  color: #163154;
+  font-size: 17px;
+  line-height: 1.7647058824;
+}
+@media (max-width: 575.98px) {
+  .entry-content p {
+    font-size: 15px;
+  }
 }
